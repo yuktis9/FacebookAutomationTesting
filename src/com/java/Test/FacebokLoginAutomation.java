@@ -30,13 +30,13 @@ public class FacebokLoginAutomation {
 		String url = "http:\\www.facebook.com";
 		String currentUrl = driver.getCurrentUrl();
 		
-		if(url.equals(url) == currentUrl.equals(currentUrl)){
+		/*if(url.equals(url) == currentUrl.equals(currentUrl)){
 			System.out.println("Similar strings for url, proceed");
 		}else
 		{
 			System.out.println("Disimilar strings for url, Stop");
 			return;
-		}
+		}*/
 		
 		driver.findElement(By.name("email")).sendKeys("abc@gmail.com");
 		driver.findElement(By.name("pass")).sendKeys("aaa");
