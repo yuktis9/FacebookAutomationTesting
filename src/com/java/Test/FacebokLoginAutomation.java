@@ -40,13 +40,9 @@ public class FacebokLoginAutomation {
 		
 		driver.findElement(By.name("email")).sendKeys("abc@gmail.com");
 		driver.findElement(By.name("pass")).sendKeys("aaa");
-//		driver.findElement(By.id("u_0_l")).click();
-//		driver.findElement(By.linkText("Log In")).click();
 		driver.findElement(By.xpath(".//*[@id='u_0_n']")).click();
-		
-//		System.out.println("You're Logged in!! Congrats");
-		
-//		driver.quit();
+				
+		driver.quit();
 
 
 	}
