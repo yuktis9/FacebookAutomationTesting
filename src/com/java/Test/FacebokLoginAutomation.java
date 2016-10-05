@@ -5,6 +5,7 @@ package com.java.Test;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 /**
@@ -18,9 +19,11 @@ public class FacebokLoginAutomation {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "//Applications//chromedriver");
+		WebDriver driver = new ChromeDriver();
 		
+//		WebDriver driver = new SafariDriver();
 		
-		WebDriver driver = new SafariDriver();
 		
 		driver.get("http:\\www.facebook.com");
 		
@@ -35,13 +38,16 @@ public class FacebokLoginAutomation {
 			return;
 		}
 		
-		driver.findElement(By.name("email")).sendKeys("yukti@gmail.com");;
-		driver.findElement(By.name("pass")).sendKeys("123");
-		driver.findElement(By.id("u_0_l")).click();
+		driver.findElement(By.name("email")).sendKeys("yuktis9@gmail.com");
+		driver.findElement(By.name("pass")).sendKeys("ideasarwadia");
+//		driver.findElement(By.id("u_0_l")).click();
+//		driver.findElement(By.linkText("Log In")).click();
+		driver.findElement(By.xpath(".//*[@id='u_0_n']")).click();
 		
 //		System.out.println("You're Logged in!! Congrats");
 		
-		driver.close();
+//		driver.quit();
+
 
 	}
 
